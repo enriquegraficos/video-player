@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="nav">
+        <img src="./img/logo.png" alt="">
+    </div>
+    <div class="wrapper">
+
+        <div class="player">
+                <video id="video" src="./video/dualipa.mp4" ></video>
+
+            <div class="play-overlay">
+                <H2 class="player-title">Dua Lipa Fan</H1>
+                <div class="player-action">
+
+                <button class="button" id="play" aria-label="Reproducir" title="Reproducir"></button>
+                <Button class="button" hidden id="pause" aria-label="Pausar" title="Pausar" ></Button>
+                <Button class="button" id="forward" aria-label="Avanzar 10 segundos" title="Avanzar 10 segundos" ></Button>
+                <button class="button" id="backward" aria-label="Retroceder 10 segundos"  title="Retroceder 10 segundos"></button>
+            </div>
+            <div class="player-progress">
+                <input id="progreso" type="range" min="0" value="0" step="1">      
+            </div>
+            </div>    
+        </div>
+    </div>
+
+    <section class="buttons-tickets">
+        <button class="button-t">
+            <a href="https://www.dualipa.com/live/">BUY TOUR TICKETS</a>
+        </button>
+        <button class="button-t">
+            <a href="https://www.dualipa.com/live/">ENTER SITE</a>
+        </button>
+
+    </section>
+
+    <div class="suscribe">
+        <p>Keep up to date with the latest news!</p>
+
+        <input class="email" type="text" placeholder="E-mail">
+        <button class="sign-up">Sign Up!</button>
+    </div>
+
+    <footer class="footer">
+        <ul class="item">
+            <li>TERMS & CONDITIONS</li>
+            <li>PRIVACITY</li>
+            <li>COOKIES POLICY</li>
+            <li>COOKIES SETTINGS</li>
+        </ul>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
