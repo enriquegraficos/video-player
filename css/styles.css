@@ -1,0 +1,180 @@
+@import "./buttons.css";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.player video{
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+    vertical-align: middle;
+    object-fit: cover;
+    
+
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+}
+
+.nav img{
+    width: 300px;
+    height: 100px;
+    margin-top: 25px;
+}
+.wrapper{
+    max-inline-size: 900px;
+    margin: auto;
+}
+
+.player{
+    margin-block-start: 100px;
+    position: relative;
+    
+}
+
+.player-title{
+    color: white;
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 20px;
+}
+
+.player-action{
+    position: absolute;
+    inset: 0;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-progress{
+ 
+   position: absolute; 
+   inset-block-end: 0;
+   inset-inline:0;
+    display: flex;
+    padding: 10px;
+}
+
+.player-progress input{
+    flex: 1;
+}
+
+.play-overlay{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: .3s opacity;
+}
+
+.player:hover .play-overlay{
+    opacity: 1;
+}
+
+.buttons-tickets{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 15px;
+    padding: 50px;
+}
+
+
+
+.button-t{
+    width: 150px;
+    height: 45px;
+    background-color: white;
+    border-radius: 15px;
+    
+}
+.button-t:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    transition: .2s;
+}
+
+.button-t a{
+    text-decoration: none;
+    color: #7f7f7f;
+    font-weight: bold;
+}
+
+
+.button-t a:hover{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.suscribe{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.suscribe p{
+    align-self: center;
+    
+}
+.email{
+    width: 250px;
+    height: 45px;
+    background-color: black;
+    border-radius: 6px;
+    border: 1px solid #fd6aa4;
+    color: #7f7f7f;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sign-up{
+    width: 150px;
+    height: 45px;
+    background-color: black;
+    border-radius: 6px;
+    border: 1px solid #fd6aa4;
+    color: #7f7f7f;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sign-up:hover{
+    width: 150px;
+    height: 45px;
+    background-color:#fd6aa4 ;
+    border-radius: 6px;
+    border: 1px solid #fd6aa4;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin: 35px;
+    
+  
+}
+
+.item{
+    list-style: none;
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+    
+}
